@@ -2,7 +2,7 @@
 
 ###### npm install markovjs-immutable
 
-[![Release](https://img.shields.io/badge/Release-0.1.0.SNAPSHOT-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs-immutable/releases)
+[![Release](https://img.shields.io/badge/Release-0.1.0-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs-immutable/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs-immutable/blob/master/LICENSE)
 
 This is a memory implementation for [markovjs](https://github.com/lsunsi/markovjs) based on [immutablejs](https://github.com/facebook/immutable-js/).
