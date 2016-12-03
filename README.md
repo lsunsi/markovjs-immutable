@@ -20,7 +20,7 @@ const m = memory.init(0.0, a => a)
 markov().memory(memory, m)
 ```
 
-The initializer functions has the following signature:
+The initializer function has the following signature:
 ```javascript
 // A: action type
 // G: game state type
@@ -29,12 +29,12 @@ type Init = <A, G, O>(number, G=> O) => MemoryState<A, G, O>
 ```
 The first parameter is the initial value for all unset memory slots.
 
-The second one is the `observe` function. It maps an `game state type (G)` to an `observation type (O)`.
-It serves the purpose as `toString` does in the default memory implementation, but expecting an `immutable value` as the return type instead of a `string`.
+The second one is the `observe` function. It maps a `game state type (G)` to an `observation type (O)`.
+It serves the same purpose as `toString` does in the default memory implementation, but expecting an `immutable value` as the return type instead of a `string`.
 
 This is one of the great things this package provides: a way for you to code your state and agent observation in a higher level letting the package figure how to store the data.
 
-It's important to note that while the `observation value` **needs** to be immutable, your `game state value` do not.
+It's important to note that while the `observation value` **needs** to be immutable, your `game state value` does not.
 That said, it's encouraged that you code it as an immutable value as well.
 
 ## Thanks
